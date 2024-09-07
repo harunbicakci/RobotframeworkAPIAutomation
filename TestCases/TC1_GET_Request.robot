@@ -32,3 +32,5 @@ Get_weatherInfo
     ${responseHeaderContentTypeValue}=    get from dictionary    ${response.headers}    ${contentType}
     should be equal    ${responseHeaderContentTypeValue}    ${applicationJson}
     log to console    Actual Response Header Content-Type is -->  ${responseHeaderContentTypeValue}
+
+#     debug
