@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf4342a-9a41-4651-80b5-f39592619d03" name="Changes" comment="maintenance">
-      <change afterPath="$PROJECT_DIR$/TestCases/TC2_POST_Request.robot" afterDir="false" />
+    <list default="true" id="caf4342a-9a41-4651-80b5-f39592619d03" name="Changes" comment="Post create new user request added">
+      <change afterPath="$PROJECT_DIR$/Constants/constants.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Constants/example.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Constants/utils.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Constants/validations.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCases/TC3_DELETE_Request.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/TC1_GET_Request.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/TC1_GET_Request.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/TC2_POST_Request.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/TC2_POST_Request.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +38,9 @@
   "associatedIndex": 1
 }]]></component>
   <component name="ProjectId" id="2ldJ78EDBLi6NrH0Omk18aWynqP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,13 +92,22 @@
       <option name="project" value="LOCAL" />
       <updated>1725672007785</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Post create new user request added">
+      <option name="closed" value="true" />
+      <created>1725710852444</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725710852444</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second commit" />
     <MESSAGE value="added first test case" />
     <MESSAGE value="maintenance" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintenance" />
+    <MESSAGE value="Post create new user request added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Post create new user request added" />
   </component>
 </project>
