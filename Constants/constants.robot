@@ -14,8 +14,9 @@ ${response}
 ${status_code}
 ${response.status_code}
 ${res_body}
+${responseVariable}
 
-${userName}     edavids30
+${userName}     edavids29
 ${password}     Edgar@132
 ${userIDFromResponse}
 ${token}

@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caf4342a-9a41-4651-80b5-f39592619d03" name="Changes" comment="Post create new user request added">
-      <change afterPath="$PROJECT_DIR$/Constants/constants.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Constants/example.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Constants/utils.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Constants/validations.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCases/TC3_DELETE_Request.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/TC1_GET_Request.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/TC1_GET_Request.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Constants/constants.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Constants/constants.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Constants/utils.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Constants/utils.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestCases/TC2_POST_Request.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/TC2_POST_Request.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725710852444</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Post create new user request added">
+      <option name="closed" value="true" />
+      <created>1725814336658</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725814336658</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

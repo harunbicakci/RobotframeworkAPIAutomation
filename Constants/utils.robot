@@ -28,13 +28,22 @@ post create user
     ${userIDFromResponse}=    convert to string    ${response.json()}[userID]
     log to console    The User ID from the response is --> ${userIDFromResponse}
 
-post generate token
+set header and body for generate token
     ${requestTokenBody}=    create dictionary   userName=${userName}    password=${password}
     ${requestTokenHeader}=  create dictionary    Content-Type=${ApplicationJSON}
     ${response}=    POST    ${BASE_URL_BOOKSTORE}${GENERATE_TOKEN_ENDPOINT}     ${requestTokenBody}     ${requestTokenHeader}
+
+
+post generate token
+#    ${response}=    POST    ${BASE_URL_BOOKSTORE}${GENERATE_TOKEN_ENDPOINT}     ${requestTokenBody}     ${requestTokenHeader}
 #    ${status_code}=  set suite variable    ${response.status_code}
 #    log to console    The Status Code is --> ${status_code}
 
+#----------------------------------------------------------------------------------------------------------------------
+    ${responseVariable}=    set variable    ${response.json()}
+    log to console    UTILS --> responseVariable is --> ${responseVariable}
+
+#----------------------------------------------------------------------------------------------------------------------
     ${token1}=   convert to string   ${response.json()}[token]
     log to console    token1 variable is --> ${token1}
 
@@ -52,35 +61,6 @@ get user account
     log to console    The GET USER response.json() method is --> ${response.json()}
 
 #    VALIDATIONS
-validate status code is 200
-#    ${status_code}=    convert to string    ${response.status_code}
-#    log to console    Status Code - response.status_code --> ${response.status_code}
-#    log to console    Status Code - status_code --> ${status_code}
-#    should be equal    ${status_code}       200
-    status should be    200
-
-validate status code is 201
-    set global variable    ${status_code}    ${response.status_code}
-    log to console    Status Code - response.status_code --> ${response.status_code}
-    log to console    Status Code - status_code --> ${status_code}
-    should be equal    ${status_code}       201
-
-validate status code is 400
-    ${status_code}=    convert to string    ${response.status_code}
-    should be equal    ${status_code}       400
-
-validate status code is 401
-    ${status_code}=    convert to string    ${response.status_code}
-    should be equal    ${status_code}       401
-
-validate status code is 404
-    ${status_code}=    convert to string    ${response.status_code}
-    should be equal    ${status_code}       404
-
-validate status code is 406
-    ${status_code}=    convert to string    ${response.status_code}
-    should be equal    ${status_code}       406
-
 validate response body contains username and books
     set global variable   ${res_body}    ${response.content}
 
@@ -88,6 +68,7 @@ validate response body contains username and books
     should contain    ${res_body}       books
 
 validate response body contains token and expires
-    ${res_body}=    convert to string    ${response.content}
-    should contain    ${res_body}       token
-    should contain    ${res_body}       expires
+    log to console    UTILS --> responseVariable is --> ${responseVariable}
+#    ${res_body}=    convert to string    ${response.content}
+    should contain    ${responseVariable}       token
+    should contain    ${responseVariable}       expires
