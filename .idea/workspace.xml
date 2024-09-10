@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf4342a-9a41-4651-80b5-f39592619d03" name="Changes" comment="Post create new user request added">
+    <list default="true" id="caf4342a-9a41-4651-80b5-f39592619d03" name="Changes" comment="trying to figure out the global variable - response">
+      <change afterPath="$PROJECT_DIR$/TestCases/TC3_NEW_Request.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Constants/constants.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Constants/constants.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Constants/utils.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Constants/utils.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/TC2_POST_Request.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/TC2_POST_Request.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCases/TC3_DELETE_Request.robot" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725814336658</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="trying to figure out the global variable - response">
+      <option name="closed" value="true" />
+      <created>1725916281064</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725916281064</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,6 +120,7 @@
     <MESSAGE value="added first test case" />
     <MESSAGE value="maintenance" />
     <MESSAGE value="Post create new user request added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Post create new user request added" />
+    <MESSAGE value="trying to figure out the global variable - response" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to figure out the global variable - response" />
   </component>
 </project>

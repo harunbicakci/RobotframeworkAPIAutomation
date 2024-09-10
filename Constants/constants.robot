@@ -6,8 +6,8 @@ Library     Collections
 ${BASE_URL_BOOKSTORE}     https://bookstore.toolsqa.com
 ${CREATE_NEW_ACCOUNT_ENDPOINT}      /Account/v1/User
 ${GENERATE_TOKEN_ENDPOINT}      /Account/v1/GenerateToken
-${DELETE_ACCOUNT_ENDPOINT}      /Account/v1/user/${userIDFromResponse}
-${GET_ACCOUNT_INFO_ENDPOINT}    /Account/v1/user/${userIDFromResponse}
+${DELETE_ACCOUNT_ENDPOINT}      /Account/v1/User/${userIDFromResponse}
+${GET_ACCOUNT_INFO_ENDPOINT}    /Account/v1/User/${userIDFromResponse}
 
 ${ApplicationJSON}      application/json
 ${response}
@@ -16,7 +16,7 @@ ${response.status_code}
 ${res_body}
 ${responseVariable}
 
-${userName}     edavids29
+${userName}     edavids47
 ${password}     Edgar@132
 ${userIDFromResponse}
 ${token}
