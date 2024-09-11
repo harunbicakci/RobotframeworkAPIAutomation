@@ -37,3 +37,7 @@ Get User Status
     status should be    200
 
 Delete Existing User
+
+#Bookstore Books
+Add Books to Account
+    ${body}=    create dictionary    userID=${userID}   collectionOfIsbns.isbn=
