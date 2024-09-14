@@ -8,6 +8,7 @@ ${CREATE_NEW_ACCOUNT_ENDPOINT}      /Account/v1/User
 ${GENERATE_TOKEN_ENDPOINT}      /Account/v1/GenerateToken
 ${DELETE_ACCOUNT_ENDPOINT}      /Account/v1/User/${userIDFromResponse}
 ${GET_ACCOUNT_INFO_ENDPOINT}    /Account/v1/User/${userIDFromResponse}
+${POST_BOOKS}       /Bookstore/v1/Books
 
 ${ApplicationJSON}      application/json
 ${response}
@@ -20,3 +21,8 @@ ${userName}     edavids47
 ${password}     Edgar@132
 ${userIDFromResponse}
 ${token}
+
+${book_git_pocket_guide}    9781449325862
+${book_learning_javascript_design}  9781449331818
+${book_designing_evolvable_web}  9781449337711
+${book_speaking_javascript}     9781449365035

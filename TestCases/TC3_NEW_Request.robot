@@ -36,8 +36,13 @@ Get User Status
     ${response}=   GET    ${BASE_URL_BOOKSTORE}${CREATE_NEW_ACCOUNT_ENDPOINT}    params=UUID=${userID}
     status should be    200
 
-Delete Existing User
+#---------------------------------------------------------------------------------------------------------
 
 #Bookstore Books
 Add Books to Account
-    ${body}=    create dictionary    userID=${userID}   collectionOfIsbns.isbn=
+    [Tags]    addBooks
+    ${body}=    create dictionary    userID=${userID}   collectionOfIsbns.isbn=${book_git_pocket_guide}
+    ${header}=  create dictionary    Content-Type=${ApplicationJSON}
+    ${response}=    POST    ${BASE_URL_BOOKSTORE}${POST_BOOKS}      ${body}     ${header}
+    status should be    201
+    log to console    ${response}
