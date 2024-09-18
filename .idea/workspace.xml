@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf4342a-9a41-4651-80b5-f39592619d03" name="Changes" comment="books test case added">
+    <list default="true" id="caf4342a-9a41-4651-80b5-f39592619d03" name="Changes" comment="books test case added2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Constants/constants.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Constants/constants.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCases/TC3_NEW_Request.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestCases/TC3_NEW_Request.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726082397155</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="books test case added2">
+      <option name="closed" value="true" />
+      <created>1726283714604</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726283714605</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,6 +145,7 @@
     <MESSAGE value="trying to figure out the global variable - response" />
     <MESSAGE value="new test suite created for regression" />
     <MESSAGE value="books test case added" />
-    <option name="LAST_COMMIT_MESSAGE" value="books test case added" />
+    <MESSAGE value="books test case added2" />
+    <option name="LAST_COMMIT_MESSAGE" value="books test case added2" />
   </component>
 </project>
