@@ -27,3 +27,4 @@ ${book_learning_javascript_design}  9781449331818
 ${book_designing_evolvable_web}  9781449337711
 ${book_speaking_javascript}     9781449365035
 ${book_speaking_java}     9781449311111
+${book_speaking_python}     9781449311112
