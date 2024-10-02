@@ -9,7 +9,7 @@ ${token1}
 
 *** Test Cases ***
 Create Valid User TestCase
-    [Tags]    Regression
+    [Tags]    createUser
     ${body}=    create dictionary    userName=${userName}    password=${password}
     ${header}=  create dictionary    Content_Type=${ApplicationJSON}
     ${response}=    POST    ${BASE_URL_BOOKSTORE}${CREATE_NEW_ACCOUNT_ENDPOINT}      ${body}    ${header}
@@ -39,10 +39,32 @@ Get User Status
 #---------------------------------------------------------------------------------------------------------
 
 #Bookstore Books
-Add Books to Account
+Add/Post Books to Account
     [Tags]    addBooks
-    ${body}=    create dictionary    userID=${userID}   collectionOfIsbns.isbn=${book_git_pocket_guide}
+    ${body}=    create dictionary    userID=${userID}   isbn=${book_git_pocket_guide}   isbn=${book_learning_javascript_design}
     ${header}=  create dictionary    Content-Type=${ApplicationJSON}
-    ${response}=    POST    ${BASE_URL_BOOKSTORE}${POST_BOOKS}      ${body}     ${header}
+    ${response}=    POST   ${BASE_URL_BOOKSTORE}${POST_BOOKS}     json=${body}     ${header}
     status should be    201
-    log to console    ${response}
+
+
+#    evaluate    {
+#               "userID": "${userName}",
+#               "collectionOfIsbns": [
+#                    {
+#                        "isbn": "${book_git_pocket_guide}"
+#                    },
+#                    {
+#                        "isbn": "${book_learning_javascript_design}"
+#                    }
+#                   ]
+#               }
+#    ${header}=  create dictionary    Content-Type=${ApplicationJSON}
+#    ${response}=    POST   ${POST_BOOKS}     data=${body}     header=${header}
+#    status should be    201
+
+#    ALTERNATE
+#    ${body}=    create dictionary    userID=${userID}   collectionOfIsbns.isbn=${book_git_pocket_guide}
+#    ${header}=  create dictionary    Content-Type=${ApplicationJSON}
+#    ${response}=    POST    ${BASE_URL_BOOKSTORE}${POST_BOOKS}      ${body}     ${header}
+#    status should be    201
+#    log to console    ${response}
