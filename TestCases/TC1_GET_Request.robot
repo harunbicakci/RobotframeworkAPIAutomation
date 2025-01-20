@@ -24,6 +24,10 @@ Get_weatherInfo
 #    Validations --> we need to convert the response status code into String format
     ${actualResponseStatusCodeString}=      convert to string    ${response.statusCode}
 #    or ${response.status_code}
+
+# -->    ${responseData} = response.json()
+
+
     should be equal    ${actualResponseStatusCodeString}       ${expectedCode200}
     log to console    Actual Status Code is --> ${actualResponseStatusCodeString}
 

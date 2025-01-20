@@ -41,7 +41,7 @@ Get User Status
 #Bookstore Books
 Add/Post Books to Account
     [Tags]    addBooks
-    ${body}=    create dictionary    userID=${userID}   isbn=${book_git_pocket_guide}   isbn=${book_learning_javascript_design}
+    ${body}=    create dictionary    userID=${userID}   isbn=${book_designing_evolvable_web}
     ${header}=  create dictionary    Content-Type=${ApplicationJSON}
     ${response}=    POST   ${BASE_URL_BOOKSTORE}${POST_BOOKS}     json=${body}     ${header}
     status should be    201
